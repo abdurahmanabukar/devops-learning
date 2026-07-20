@@ -1,107 +1,34 @@
-# File System Notes
+1. cd
+Changes your current directory.
+Useful for moving around the Linux file system.
 
-## Commands Practiced
-
-cd
-
-Changes directory (folder).
-
-Example:
-
-```bash
+Example:  
 cd /var/log
-```
 
-pwd
+2. ls -lah
+Lists files with detailed info (permissions, size, owner).
+Useful for checking what’s inside a directory.
 
-Shows the current working directory.
-
-Example:
-
-```bash
-pwd
-```
-
+Example:  
 ls -lah
 
-Lists files and directories with detailed information, including hidden files.
+3. mkdir -p
+Creates folders, including nested directories.
+Useful for building project structures.
 
-Example:
-
-```bash
-ls -lah
-```
-
-touch
-
-Creates an empty file.
-
-Example:
-
-```bash
-touch test.txt
-```
-
-mkdir -p
-
-Creates directories and any parent directories that do not already exist.
-
-Example:
-
-```bash
+Example:  
 mkdir -p projects/demo
-```
 
-cp
+4. cp
+Copies files or directories.
+Useful for backups or duplicating files.
 
-Copies a file from one location to another.
-
-Example:
-
-```bash
+Example:  
 cp test.txt projects/demo/
-```
 
-mv
+5. tail -f
+Shows the end of a file and keeps updating live.
+Useful for watching logs in real time (DevOps essential).
 
-Moves or renames a file.
-
-Example:
-
-```bash
-mv projects/demo/test.txt projects/demo/backup.txt
-```
-
-rm
-
-Deletes a file.
-
-Example:
-
-```bash
-rm projects/demo/backup.txt
-```
-
-cat
-
-Displays the contents of a file.
-
-Example:
-
-```bash
-cat /etc/passwd
-```
-
-head
-
-Displays the first lines of a file.
-
-Example:
-
-```bash
-head -n 20 /etc/services
-```
-
-## What I Learned
-
-In this task, I learned how to navigate the Linux file system and perform basic file operations using the command line. I practiced creating, copying, moving, renaming, and deleting files, as well as viewing file contents. These commands are essential for working efficiently in Linux and form the foundation of many DevOps tools and workflows.
+Example:  
+tail -f /var/log/auth.log
