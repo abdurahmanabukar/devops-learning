@@ -1,28 +1,20 @@
-File Management Notes
-touch
-Creates a new empty file.
-Example:  
-touch test.txt
+Task 1 Useful Commands
+1. uname -a
+Shows full system information (kernel, OS version, architecture).
+Useful for checking your Linux setup.
 
-mkdir -p
-Creates a new folder. The -p option also creates any missing parent folders.
-Example:  
-mkdir -p projects/demo
+2. whoami
+Displays the current logged‑in user.
+Useful for confirming your account and permissions.
 
-cp
-Copies a file from one place to another.
-Example:  
-cp test.txt projects/demo/
+3. pwd
+Prints your current working directory.
+Useful for knowing where you are in the file system.
 
-mv
-Moves a file or renames it.
-Example:  
-mv projects/demo/test.txt projects/demo/backup.txt
+4. ls -lah
+Lists files with detailed information (permissions, size, owner).
+Useful for checking file details quickly.
 
-rm
-Deletes a file.
-Example:  
-rm projects/demo/backup.txt
-
-What I Learned
-I learned how to create files, make folders, copy files, move/rename files, and delete files using Linux commands. These are basic file management skills that are used all the time when working in Linux.
+5. hostnamectl
+Shows hostname and OS details.
+Useful for verifying VM/WSL/Killercode environment.
