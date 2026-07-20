@@ -1,28 +1,38 @@
-Text Processing Notes
-cat
-Shows the full content of a file.
-Example:  
-cat /etc/passwd
+5 useful commands I learned
+1. grep
+Searches for text patterns inside files.
+Useful for finding errors, keywords, usernames, or log entries.
 
-head
-Shows the first lines of a file.
 Example:  
-head -n 20 /etc/services
+grep "error" /var/log/syslog
 
-less
-Opens a file in a scrollable viewer so you can move up and down.
+2. awk
+Extracts and processes specific columns from text.
+Useful for analysing logs, user lists, and process output.
+
 Example:  
-less /var/log/syslog
+ps aux | awk '{print $1, $11}'  
+Shows the user + command for each process.
 
-tail
-Shows the last lines of a file.
+3. sed
+Edits text streams (replace, delete, print).
+Useful for automation and modifying config files.
+
 Example:  
-tail /var/log/auth.log
+sed 's/old/new/g' file.txt  
+Replaces all “old” with “new”.
 
-tail -f
-Shows the last lines and keeps updating live as new log entries appear.
+4. wc -l
+Counts lines in a file or output.
+Useful for counting errors, users, or log entries.
+
 Example:  
-tail -f /var/log/auth.log
+grep -i "failed" /var/log/auth.log | wc -l  
+Counts failed login attempts.
 
-What I Learned
-I learned how to view and inspect files in Linux using different text‑processing commands. These commands help me read full files, check the beginning or end of files, scroll through logs, and monitor live updates. They are important for understanding system activity and debugging issues.
+5. sort | uniq
+Sorts text and removes duplicates.
+Useful for summarising logs or finding unique entries.
+
+Example:  
+cat /var/log/syslog | grep "error" | sort | uniq
