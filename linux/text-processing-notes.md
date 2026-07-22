@@ -36,3 +36,11 @@ Useful for summarising logs or finding unique entries.
 
 Example:  
 cat /var/log/syslog | grep "error" | sort | uniq
+## Challenge
+
+List all users with `/bin/bash` as their shell.
+
+Command:
+
+bash
+awk -F: '$7=="/bin/bash" {print $1}' /etc/passwd
