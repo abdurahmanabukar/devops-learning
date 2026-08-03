@@ -36,3 +36,23 @@ Create a Bash script that automates directory and file creation.
 
 - `challenge2-script.png`
 - `challenge2-output.png`
+
+## Challenge 3 - File Checker with Permissions
+
+### Objective
+
+Create a Bash script that checks whether a file exists and displays its permissions.
+
+### What my script does
+
+- Prompts the user to enter a filename
+- Checks whether the file exists
+- Checks if the file is readable
+- Checks if the file is writable
+- Checks if the file is executable
+- Displays the appropriate messages
+
+### Screenshots
+
+- challenge3-script.png
+- challenge3-output.png
