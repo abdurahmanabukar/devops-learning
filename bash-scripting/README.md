@@ -52,6 +52,26 @@ Create a Bash script that checks whether a file exists and displays its permissi
 - Checks if the file is executable
 - Displays the appropriate messages
 
+
+## Challenge 4 - Backup Script
+
+### Objective
+
+Create a Bash script that backs up all `.txt` files from a source directory into a timestamped backup folder.
+
+### What my script does
+
+- Prompts the user for a source directory
+- Creates a backup folder with the current date and time
+- Copies all `.txt` files into the backup folder
+- Counts the copied files
+- Displays the backup results
+
+### Screenshots
+
+- challenge4-script.png
+- challenge4-output.png
+
 ### Screenshots
 
 - challenge3-script.png
